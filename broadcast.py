@@ -7,12 +7,17 @@ def check_broadcast(x, a, b, c, d):
 
 
 def broadcast1(x, a, b, c, d):
-    # For example, use a.copy_(x) to copy the data from x to a
-    pass
+    a.copy_(x)
+    b.copy_(x)
+    c.copy_(x)
+    d.copy_(x)
 
 
 def broadcast2(x, a, b, c, d):
-    pass
+    a.copy_(x)
+    b.copy_(a)
+    c.copy_(a)
+    d.copy_(a)
 
 
 def broadcast3(x, a, b, c, d):
